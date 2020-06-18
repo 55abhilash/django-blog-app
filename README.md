@@ -1,25 +1,21 @@
 
-
-Clone This Project (Make Sure You Have Git Installed)
-```
-https://github.com/mustafamuratcoskun/DjangoBlogApp.git
-```
 Install Dependencies 
 
 ```
 pip install -r requirements.txt
 ```
+(Note: To be run with Python3)
 
 Set Database (Make Sure you are in directory same as manage.py)
 ```
 python manage.py makemigrations
-python manage.py migrate
+python manage.py migrate --run-syncdb
 ```
 Create SuperUser 
 ```
 python manage.py createsuperuser
 ```
-
-After all these steps , you can start testing and developing this project. 
-
-#### That's it! Happy Coding!
+You can now run the app, and start testing and modifying it!
+```
+python manage.py runserver
+```
